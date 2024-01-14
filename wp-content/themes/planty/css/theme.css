@@ -1,0 +1,358 @@
+/*************************************************************
+                            General
+*************************************************************/
+
+* {
+    font-family: 'syne', sans-serif;
+}
+
+:root {
+    --main-color: #E3D9D0;
+    --second-color: #3B8E46;
+    --button-color: #E0B9B4;
+    --nav-button: #DC9F96; 
+    --wpforms-field-border-radius:7px !important;
+}
+
+
+/***************************Header*******************************/
+
+/*Permet de definir la taille de ma navbar*/
+.minimal-header {
+    width: 1440px;
+}
+
+/*Permet de retirer le padding pour coller ma section a ma navigation*/
+#content-wrap{
+    padding-top: 0px !important;
+    padding-bottom: 0% !important;
+}
+
+/* Permet de flex du parent de ma div main menu*/
+#site-navigation{
+    display: flex;
+}
+
+/* permet le flex pour mon menu de navigation*/
+.main-menu{
+    display: flex !important;
+}
+
+/*Permet le placement de mon lien admin en 2 eme position dans mon menu de navigation*/
+.main-menu li:nth-last-of-type(2) {
+    order: 2 !important;   
+}
+
+/* permet de definir la taille de ma police*/
+.menu-item-185:hover{
+	font-weight:700;
+}
+
+/*Permet de definir l'odre de mon menu et un arriére plan sur un des lien de navigation*/
+.menu-item-1195 {
+	background-color: #DC9F96;
+	font-weight: 700;
+}
+
+.menu-item-1195:hover {
+    background-color: #c02e43;
+}
+/*Permet d'avoir l'écriture de mes lien en blanc*/
+#menu-item-184 > a{
+	color: white;
+}
+/*Permet de mettre un effet au survole sur mon lien*/
+.menu-item-184:hover{
+    background-color:#c02e43;
+} 
+
+/************************* page home*****************************/
+
+/* Permet de donner une largeur à ma section hero
+- une couleur de fond*/
+.hero {
+    width: 100%;
+    height: auto;
+    background-color:var(--main-color);
+}
+
+/* Permet le style de la section energie*/
+.energie {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background-color: #FFFFFF;
+}
+
+/*Permet le style de la section gout*/
+.gout {
+    width: 100%;
+    height: auto;
+
+}
+
+/*Permet le style de la section parfum*/
+.parfum {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ /* Permet de lstyle de la section avis*/
+.avis {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+/*********************Nous rencontrer********************/
+
+/*Permet le style de ma section rencontre*/
+.rencontre {
+    width: 100%;
+    height: auto;
+
+}
+/*Permet de donner une largeur de 50%*/
+.elementor-widget-wrap {
+    width: 50%;      
+}
+
+/*Permet la mise  en page de mon texte grace aux marges*/
+.texte-rencontre {
+    width: 50%;
+    padding-bottom: 5%;
+}
+
+/*Permet la mise en page de mon formulaire grace aux marges*/
+.contact-form {
+    margin: auto;
+    padding-bottom: 7%;
+}
+
+/*Permet de donner une marge à gauche */
+.wpforms-submit-container {
+    margin-left: 50%;  
+}
+
+/*Permet de mettre un fond et une marge a mon submit*/
+#wpforms-submit-143 {
+    background-color: #E0B9B4 !important;
+    margin-left: 35%;
+}
+
+ 
+/*********************commander***************************/
+
+/*Permet la mise en forme de ma section*/
+.section-commander {
+    background-color: var(--second-color);
+    width: 100%;
+    margin-top: 0%;
+    padding-bottom: 15%;
+}
+
+/*Permet de donner une marge pour mon titre*/
+.titre-commande {
+    margin-left: 15%;
+}
+
+/* Pour centrer les éléments horizontalement*/
+.element-container{ 
+    display: flex;    
+}
+
+ /*Permet de donner un position et un largeur à ma div*/
+.groupe-quantite{
+    display: flex;
+    width: 50%;
+}
+
+/*Permet d'ajuster la taille de mon input*/
+.quantity-input {
+    height : 64px;
+    border-radius: 7px 0 0 7px!important; 
+    max-width: 100% !important;
+    gap:0% !important;   
+} 
+
+/*Permet de mettre les input avec un fond blanc*/
+ input[type=number], input[type=text], input[type=email]{
+    background-color: #FFFFFF !important;
+}
+
+/*Permet le style du boutons + du formulaire de quantité*/
+.quantity-button-plus {
+    height: 32px;
+    width: 31px;
+    border-bottom:1px white !important;
+    border-top: #DC9F96;
+    border-left: #DC9F96;
+    border-right: #DC9F96;
+    border-radius: 0px 5px 0px 0px; 
+    margin-right: 25px; 
+}
+   
+/*Permet d'ajuster le style du bouton moins du formulaire de quantité*/
+.quantity-button-moins {
+    height: 32px;
+    width: 31px;
+    border-radius: 0px 0px 5px 0px; 
+    margin-right: 25px; 
+    border-left: #DC9F96;
+    border-right: #DC9F96;
+    border-bottom: #DC9F96;
+    border-top:1px white solid;    
+}
+
+/*permet a ma div contenant le bouton de lui donner une largeur*/
+.button-ok {
+    width: 50% ;   
+}
+
+ /*permet de donner la taille a mon bouton ok*/
+input[type=submit]{
+    width: 96%;   
+}
+/* Permet de mettre en place le hover sur mes inputs*/
+input[type=submit]:hover{
+    background-color: #c02e43 !important;
+}
+ /* Permet le style du bouton de validation du formulaire*/
+.submit-ok {
+    width: 65px;
+    height: 64px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #DC9F96;      
+}
+
+/**********************Formulaire de commande***************/
+
+/*Permet d'ajouter ma ligne verticale dans le css
+et de lui donner une marge pour avoir un décallage avec le bouton*/
+.separation{
+    border-right: solid 1px white;
+    margin-bottom: 2%;
+}
+
+/*Permet de faire la style des input du formulaire et le placement*/
+input[type=text], input[type=email]{
+    display: flex;
+	height: 55px;
+	width: 150%;
+	border-radius: 7px;
+}
+ 
+/*Permet le placement de mon formualaire de commande*/
+.formulaire-test{
+    display: flex !important;
+    justify-content: center !important;   
+    width: 100% !important;    
+}
+
+/*Permet le placement et la largeur de mon formulaire commander*/
+.formulaire-commander{
+    display: flex; 
+    justify-content: center;
+    text-align: start;
+    gap: 4%;
+    flex-wrap: wrap !important;
+    width: 100%;
+}
+
+/*Permet de donner une largeur à la deuxieme partie de mon formulaire infos*/
+.formulaire-infos {
+    width: 45% !important;       
+}
+
+/*Permet de mettre le texte des mes H3 du formulaire en blanc*/
+.formulaire-infos h3 , label{
+    color: #FFFFFF;
+}
+
+/*Permet de donner une largeur à mon formulaire de livraison*/
+.formulaire-livraison {
+    width:45% !important;   
+}
+
+/*Permet de mettre le texte des mes H3 du formulaire en blanc*/
+.formulaire-livraison h3 ,label {
+    color: #FFFFFF;
+}
+
+/*Permet le placement du bouton commander au centre*/
+.bouton-commander {
+    margin-top: 15% !important;
+    margin-bottom: 15% !important;
+}
+
+
+/***********************Footer*********************************/
+/*Permet le placement de mon footer*/
+#footer-bottom-menu{
+    text-align: center !important;
+    margin: auto !important;
+    float: none !important;
+}
+
+/*Permet de mettre au centre le lien de mon footer*/
+#footer-bottom {   
+    text-align: center !important;
+}
+
+
+/************************mediaquerie*****************************/
+/*Permet de mettre an place les éléments de la média queri pour la version mobile*/
+@media (max-width:320px) {
+  
+/*Permet de mettre en ligne les élèments avec une largeur défini*/  
+.groupe-quantite{
+    display: flex;
+    width: 70%;
+    }
+
+/*Permet de donner une taille à mon bouton*/
+.button-ok {
+    width: 60%;
+    }
+
+/*Permet de mettre les éléments de mon formulaire l'un en dessoous de l'autre en colonne et centré*/
+.formulaire-commander {
+    flex-direction: column;
+    align-content: center ;
+     padding-bottom: 0% !important;
+    } 
+
+/*Permet de retier la separation qui separe mon formulaire*/
+.separation{
+    display: none;
+    }
+
+/*Permet de donner une largeur à mon formaulire*/
+.formulaire-infos {
+    width: 75% !important;   
+    }
+
+/*Permet de donner une largeur à mon formaulire*/
+.formulaire-livraison {
+    width:75% !important;   
+    }
+    
+.content-area {
+    margin-bottom: 0% !important;
+    }
+}
+
+@media (max-width:1024px) {
+     
+ /*Permet de mettre en ligne les élèments avec une largeur défini*/  
+.groupe-quantite {
+    display: flex;
+    width: 100%;
+    }
+/*Permet de donner une largeur a mon input*/
+input[type=number] {    
+    width: 35px !important;   
+    }
+}
+
